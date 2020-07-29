@@ -1,0 +1,2 @@
+include ':app', ':baseLib:core', ':baseLib:router','baseLib:push','baseLib:pay', ':projectCore', ':otherLib:cockroach-x', 'otherLib:StateLayout','otherLib:FlycoTabLayout','otherLib:DatePicker',':otherLib:kprogresshud', ':otherLib:alertview','otherLib:calendarview','otherLib:zqvideolibrary', ':common:peasant'
+

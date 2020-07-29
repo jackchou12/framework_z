@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.umeng.umsdk:huawei-basetb:2.6.3.306'
+    compile 'com.umeng.umsdk:huawei-pushtb:2.6.3.306'
+    compile 'com.umeng.umsdk:huawei-umengaccs:1.2.4'
+
+    compile 'com.umeng.umsdk:meizu-push:3.8.7'
+    compile 'com.umeng.umsdk:meizu-umengaccs:1.1.1'
+
+    compile 'com.umeng.umsdk:oppo-push:2.0.2'
+    compile 'com.umeng.umsdk:oppo-umengaccs:1.0.6'
+
+    compile 'com.umeng.umsdk:vivo-push:2.3.5'
+    compile 'com.umeng.umsdk:vivo-umengaccs:1.1.0'
+
+    compile 'com.umeng.umsdk:xiaomi-push:3.7.0'
+    compile 'com.umeng.umsdk:xiaomi-umengaccs:1.1.4'
+
+    //基础组件库依赖(必须)
+    compile 'com.umeng.umsdk:common:9.1.0'
+
+    //友盟push相关依赖(必须)
+    compile 'com.umeng.umsdk:push:6.1.0'
+
+    compile 'com.umeng.umsdk:alicloud-httpdns:1.2.5'
+    compile 'com.umeng.umsdk:alicloud-utils:1.1.5'
+    compile 'com.umeng.umsdk:alicloud_beacon:1.0.1'
+
+    compile 'com.umeng.umsdk:agoo-accs:3.3.8.8-open-fix2'
+    compile 'com.umeng.umsdk:agoo_networksdk:3.5.5'
+    compile 'com.umeng.umsdk:agoo_tlog:3.0.0.17'
+    compile 'com.umeng.umsdk:agoo_tnet4android:3.1.14.9'
+
+    compile  'com.umeng.umsdk:asms:1.1.3'
+    compile 'com.umeng.umsdk:crash:0.0.4'
+}
+
+

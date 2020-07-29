@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="content_color">#343434</color>
+
+    <color name="tip_color">#aaaaaa</color>
+
+    <color name="retry_color">#C0C0C0</color>
+    <color name="scan_corner_color">#fff</color>
+
+</resources>

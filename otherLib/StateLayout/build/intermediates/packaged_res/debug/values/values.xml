@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="content_color">#343434</color>
+    <color name="retry_color">#C0C0C0</color>
+    <color name="scan_corner_color">#fff</color>
+    <color name="tip_color">#aaaaaa</color>
+    <declare-styleable name="StateLayout"><attr format="reference" name="errorImg"/><attr format="string" name="errorText"/><attr format="reference" name="emptyImg"/><attr format="string" name="emptyText"/><attr format="reference" name="noNetworkImg"/><attr format="string" name="noNetworkText"/><attr format="reference" name="timeOutImg"/><attr format="string" name="timeOutText"/><attr format="reference" name="loginImg"/><attr format="string" name="loginText"/><attr format="string" name="loadingText"/></declare-styleable>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="retry_tip">13sp</dimen>
+    <dimen name="text_tip">18sp</dimen>
+    <string name="btn_login">登录</string>
+    <string name="empty_tip">暂无数据</string>
+    <string name="error_tip">加载失败</string>
+    <string name="loading_tip">加载中...</string>
+    <string name="no_login_tip">你还没有登录</string>
+    <string name="no_network_tip">没有网络</string>
+    <string name="retry_tip">轻触屏幕重试</string>
+    <string name="time_out_tip">加载超时</string>
+</resources>
